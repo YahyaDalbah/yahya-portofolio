@@ -1,4 +1,4 @@
-import { Github, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import Reveal from "../components/Reveal";
 
 export default function Contact() {
@@ -43,6 +43,15 @@ export default function Contact() {
                 >
                   <Github className="h-5 w-5" />
                   GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/yahya-dalbah-68728324b/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-7 py-3 font-semibold text-white backdrop-blur transition-colors hover:bg-white/10"
+                >
+                  <Linkedin className="h-5 w-5" />
+                  LinkedIn
                 </a>
               </div>
             </div>

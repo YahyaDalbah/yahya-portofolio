@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Github, Menu, X } from "lucide-react";
+import { Github, Linkedin, Menu, X } from "lucide-react";
 
 const links = [
   { label: "Work", href: "/#work" },
@@ -42,6 +42,15 @@ export default function Nav() {
             className="text-zinc-400 transition-colors hover:text-white"
           >
             <Github className="h-5 w-5" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/yahya-dalbah-68728324b/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn profile"
+            className="text-zinc-400 transition-colors hover:text-white"
+          >
+            <Linkedin className="h-5 w-5" />
           </a>
           <a
             href="mailto:yahya1dalbah@gmail.com"
