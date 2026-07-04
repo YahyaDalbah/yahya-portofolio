@@ -100,42 +100,6 @@ export const projects: Project[] = [
       "Full-stack ownership: React + Tailwind frontend, Express + MongoDB backend, AI integration, auth, and deployment.",
     ],
   },
-  {
-    slug: "messaging-app",
-    title: "Realtime Messaging App",
-    tagline:
-      "A real-time chat application with multi-user messaging, built with React and Firebase — leading a team of four.",
-    year: "2024",
-    role: "Team lead & frontend developer",
-    tech: ["React", "Firebase", "JavaScript", "CSS"],
-    heroImage: "/images/chat-hero.png",
-    heroImageAlt: "Realtime chat application main view",
-    overview: [
-      "A real-time messaging platform where users chat instantly across conversations, with messages syncing live through Firebase — no refresh, no polling.",
-      "Beyond the code, this project was about leadership: I led a team of four developers, assigning tasks, reviewing every pull request, resolving merge conflicts, and unblocking teammates when they got stuck.",
-    ],
-    features: [
-      {
-        title: "Real-time multi-user messaging",
-        description:
-          "Messages appear instantly for everyone in the conversation using Firebase's real-time listeners — typing on one device shows up on another in milliseconds.",
-        image: "/images/chat-hero.png",
-        imageAlt: "Live conversation between users",
-      },
-      {
-        title: "Team leadership in practice",
-        description:
-          "Ran the project like a real product team: task assignment, code review on every merge, conflict resolution, and debugging sessions to keep four developers shipping in parallel.",
-        image: "/images/chat-feature.png",
-        imageAlt: "Conversations and user list view",
-      },
-    ],
-    highlights: [
-      "Architected the Firebase data model for conversations and messages to keep reads fast and listeners cheap.",
-      "Led a 4-person team end to end — planning, code review, and delivery.",
-      "Shipped instant message sync with zero manual refresh using real-time subscriptions.",
-    ],
-  },
 ];
 
 export function getProject(slug: string | undefined): Project | undefined {

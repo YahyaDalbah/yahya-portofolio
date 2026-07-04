@@ -11,18 +11,10 @@ npm run build    # type-check + production build to dist/
 npm run preview  # preview the production build
 ```
 
-## Adding project screenshots
+## Project screenshots
 
 AI CV Maker screenshots live in `src/assets/cvmaker/` and are imported through
 Vite (hashed + optimized at build time). The headshot is `src/assets/yahya.jpg`.
-
-Messaging app screenshots are still pending — drop PNGs into `public/images/`
-with these exact filenames (the site shows styled placeholders until then):
-
-| File | What to capture |
-| --- | --- |
-| `chat-hero.png` | Messaging app: main chat view |
-| `chat-feature.png` | Messaging app: multi-user / conversations view |
 
 Tips: desktop browser at full width (~1600px+), use demo data (no personal info),
 PNG format.
