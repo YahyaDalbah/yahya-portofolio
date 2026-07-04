@@ -22,14 +22,14 @@ export default function SelectedWork() {
               <div className="glass-card group grid overflow-hidden transition-shadow duration-300 hover:shadow-[0_0_50px_-12px] hover:shadow-accent/40 md:grid-cols-2">
                 <Link
                   to={`/work/${project.slug}`}
-                  className="relative block aspect-[16/10] overflow-hidden md:aspect-auto md:min-h-[22rem]"
+                  className="flex items-center justify-center overflow-hidden p-6 md:p-8"
                   aria-label={`${project.title} case study`}
                 >
                   <ImageWithFallback
                     src={project.heroImage}
                     alt={project.heroImageAlt}
                     label={`${project.title} screenshot`}
-                    className="absolute inset-0 h-full w-full transition-transform duration-500 group-hover:scale-[1.03]"
+                    className="rounded-lg border border-white/10 shadow-2xl shadow-black/40 transition-transform duration-500 group-hover:scale-[1.02]"
                   />
                 </Link>
 

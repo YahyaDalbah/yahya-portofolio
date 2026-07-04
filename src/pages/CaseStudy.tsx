@@ -72,7 +72,6 @@ export default function CaseStudy() {
                 src={project.heroImage}
                 alt={project.heroImageAlt}
                 label={`${project.title} — hero screenshot`}
-                className="aspect-[16/9] w-full"
               />
             </div>
           </Reveal>
@@ -120,7 +119,6 @@ export default function CaseStudy() {
                       src={feature.image}
                       alt={feature.imageAlt ?? feature.title}
                       label={feature.title}
-                      className="aspect-[16/10] w-full"
                     />
                   </div>
                 )}

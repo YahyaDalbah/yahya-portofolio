@@ -9,8 +9,9 @@ interface ImageWithFallbackProps {
 }
 
 /**
- * Renders the image if it exists; otherwise shows a styled gradient
- * placeholder so the layout looks intentional before screenshots are added.
+ * Renders the image at its natural aspect ratio (never cropped); if the file
+ * is missing, shows a styled gradient placeholder so the layout looks
+ * intentional before screenshots are added.
  */
 export default function ImageWithFallback({
   src,
@@ -23,7 +24,7 @@ export default function ImageWithFallback({
   if (failed) {
     return (
       <div
-        className={`flex items-center justify-center bg-gradient-to-br from-accent/25 via-surface to-accent-2/20 ${className}`}
+        className={`flex aspect-[16/9] w-full items-center justify-center bg-gradient-to-br from-accent/25 via-surface to-accent-2/20 ${className}`}
         role="img"
         aria-label={alt}
       >
@@ -43,7 +44,7 @@ export default function ImageWithFallback({
       alt={alt}
       loading="lazy"
       onError={() => setFailed(true)}
-      className={`object-cover object-top ${className}`}
+      className={`h-auto w-full ${className}`}
     />
   );
 }
